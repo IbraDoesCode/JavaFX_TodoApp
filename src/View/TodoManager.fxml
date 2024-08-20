@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" fillWidth="false" minHeight="600.0" minWidth="479.0" prefHeight="600.0" prefWidth="479.0" spacing="10.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TodoController">
+   <HBox alignment="CENTER" minWidth="381.0" prefHeight="80.0" prefWidth="400.0" style="-fx-border-color: lightgray; -fx-border-radius: 10px;">
+      <Label fx:id="taskCountLabel" text="You have 0 tasks!">
+         <font>
+            <Font name="Segoe UI Bold" size="24.0" />
+         </font>
+      </Label>
+   </HBox>
+   <HBox alignment="CENTER" prefHeight="50.0" prefWidth="400.0" spacing="10.0">
+      <TextField fx:id="taskTextField" alignment="CENTER" prefHeight="26.0" prefWidth="325.0" />
+      <Button mnemonicParsing="false" onAction="#addTodo" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fx:id="addButton" fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@../Resources/plus.png" />
+            </ImageView>
+         </graphic>
+      </Button>
+   </HBox>
+   <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: transparent; -fx-border-color: lightgray; -fx-border-radius: 10px;" vbarPolicy="NEVER">
+      <VBox fx:id="vbox" prefHeight="395.0" prefWidth="400.0" spacing="10.0">
+         <padding>
+            <Insets bottom="5.0" left="3.0" right="7.0" top="5.0" />
+         </padding></VBox>
+   </ScrollPane>
+</VBox>

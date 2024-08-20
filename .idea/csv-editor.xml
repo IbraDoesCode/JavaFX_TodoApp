@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CsvFileAttributes">
+    <option name="attributeMap">
+      <map>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\Java\Employee Management System\Data\employeeData.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\Java\Employee Management System\Data\userCredentials.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\Java\MO-IT101_Payroll_System\data\attendance.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\Java\MO-IT101_Payroll_System\data\employeeData.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\Java\MO-IT101_Payroll_System\data\sss_contribution_table.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\Java\MO-IT103\Data\Attendance\apr_attendance.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\Java\MO-IT103\Data\Attendance\feb_attendance.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\Java\MO-IT103\Data\Attendance\jan_attendance.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\Java\MO-IT103\Data\Attendance\mar_attendance.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\Java\MO-IT103\Data\Attendance\may_attendance.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\Java\MO-IT103\Data\Employee_data.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\Java\MO-IT103\Data\User_credentials.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\Java\MO-IT103\Data\sss_contribution_table.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\Java\Practice\out\production\Practice\AttendanceSystem\attendanceData.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\Java\Practice\out\production\Practice\employeeData.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\Java\Practice\src\AttendanceSystem\attendanceData.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\Java\Practice\src\employeeData.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\database\ActiveEmployees.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\database\AttendanceData.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\database\EmployeeData.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\database\LeaveBalanceData.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\database\LeaveRecords.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\database\PayrollData.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\database\UserCredentials.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\release\MPH-v1.0.1-beta\database\ActiveEmployees.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\release\MPH-v1.0.1-beta\database\AttendanceData.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\release\MPH-v1.0.1-beta\database\EmployeeData.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\release\MPH-v1.0.1-beta\database\LeaveBalanceData.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\release\MPH-v1.0.1-beta\database\LeaveRecords.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\release\MPH-v1.0.1-beta\database\PayrollData.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\release\MPH-v1.0.1-beta\database\UserCredentials.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\release\MPH-v1.2.0-beta\database\ActiveEmployees.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\release\MPH-v1.2.0-beta\database\AttendanceData.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\release\MPH-v1.2.0-beta\database\EmployeeData.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\release\MPH-v1.2.0-beta\database\LeaveBalanceData.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\release\MPH-v1.2.0-beta\database\LeaveRecords.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\release\MPH-v1.2.0-beta\database\PayrollData.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\release\MPH-v1.2.0-beta\database\UserCredentials.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\release\MPH\MPH-v1.2.0-beta\database\ActiveEmployees.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\release\MPH\MPH-v1.2.0-beta\database\AttendanceData.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\release\MPH\MPH-v1.2.0-beta\database\EmployeeData.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\release\MPH\MPH-v1.2.0-beta\database\LeaveBalanceData.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\release\MPH\MPH-v1.2.0-beta\database\LeaveRecords.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\release\MPH\MPH-v1.2.0-beta\database\PayrollData.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\release\MPH\MPH-v1.2.0-beta\database\UserCredentials.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\reports\attendance\Monthly_AttendanceReport_2024-3.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\reports\attendance\Semi-Monthly_AttendanceReport_2024-03-01-15.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\reports\attendance\Semi-Monthly_AttendanceReport_2024-03-18-31.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\reports\attendance\Weekly_AttendanceReport_2024-03-11-17.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\reports\attendance\Weekly_AttendanceReport_2024-03-25-31.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\reports\payroll\Monthly_PayrollReport_2024-3.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\MotorPH\MO-IT110\Payroll_System\reports\payroll\Semi-Monthly_PayrollReport_2024-03-18-31.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\Python\Projects\Employee Attendance System\Attendance data.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\Python\Projects\attendance_generator\apr_attendance.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\Python\Projects\attendance_generator\aug_attendance.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\Python\Projects\attendance_generator\feb_attendance.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\Python\Projects\attendance_generator\march_attendance.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="C:\Users\Lenovo\OneDrive\Documents\Desktop\Python\Projects\attendance_generator\may_attendance.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Database\tasks.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
