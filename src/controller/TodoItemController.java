@@ -1,8 +1,8 @@
-package Controller;
+package controller;
 
 
-import Service.TodoManager;
-import Util.AlertUtil;
+import service.TodoManager;
+import util.AlertUtil;
 import javafx.fxml.FXML;
 import javafx.scene.control.CheckBox;
 import javafx.scene.layout.VBox;

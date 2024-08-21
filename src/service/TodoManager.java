@@ -1,7 +1,7 @@
-package Service;
+package service;
 
-import Model.Status;
-import Model.Todo;
+import model.Status;
+import model.Todo;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;

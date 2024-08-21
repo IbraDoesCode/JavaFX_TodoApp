@@ -16,10 +16,10 @@ public class TodoApp extends Application{
     @Override
     public void start(Stage stage) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/TodoManager.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/TodoManager.fxml"));
             Parent root = loader.load();
             stage.setTitle("TodoApp");
-            stage.getIcons().add(new Image("/Resources/logo.png"));
+            stage.getIcons().add(new Image("/resources/logo.png"));
             stage.setScene(new Scene(root));
             stage.setResizable(false);
             stage.show();

@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" fillWidth="false" minHeight="600.0" minWidth="479.0" prefHeight="600.0" prefWidth="479.0" spacing="10.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TodoController">
+<VBox alignment="CENTER" fillWidth="false" minHeight="600.0" minWidth="479.0" prefHeight="600.0" prefWidth="479.0" spacing="10.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TodoController">
    <HBox alignment="CENTER" minWidth="381.0" prefHeight="80.0" prefWidth="400.0" style="-fx-border-color: lightgray; -fx-border-radius: 10px;">
       <Label fx:id="taskCountLabel" text="You have 0 tasks!">
          <font>
@@ -24,7 +24,7 @@
       <Button mnemonicParsing="false" onAction="#addTodo" style="-fx-background-color: transparent;">
          <graphic>
             <ImageView fx:id="addButton" fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
-               <Image url="@../Resources/plus.png" />
+               <Image url="@../resources/plus.png" />
             </ImageView>
          </graphic>
       </Button>

@@ -1,8 +1,8 @@
-package Controller;
+package controller;
 
-import Model.Status;
-import Model.Todo;
-import Service.TodoManager;
+import model.Status;
+import model.Todo;
+import service.TodoManager;
 import javafx.collections.ListChangeListener;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -11,7 +11,7 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.scene.Node;
-import Service.FileService;
+import service.FileService;
 
 import java.io.IOException;
 import java.time.LocalDateTime;
@@ -58,7 +58,7 @@ public class TodoController {
         if (!todo.isEmpty()) {
             try {
                 // Load the TodoItem FXML
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/TodoItem.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/TodoItem.fxml"));
                 Node todoItem = loader.load();
 
                 // Get the controller of the TodoItem and set the todo text
@@ -88,7 +88,7 @@ public class TodoController {
 
         for (Todo todo : todoList) {
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/TodoItem.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/TodoItem.fxml"));
                 Node todoItem = loader.load();
 
                 TodoItemController controller = loader.getController();
