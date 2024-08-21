@@ -13,7 +13,7 @@ import java.util.List;
 
 public class FileService {
 
-    private final String filePath = "src/Resources/Database/tasks.csv";
+    private final String filePath = "src/Resources/Database/todoData.csv";
 
     /**
      * @return List of String Array representing rows and columns
@@ -35,7 +35,6 @@ public class FileService {
     }
 
     public void appendData(String[] record) {
-        // passing true as the second parameter for append
         try (CSVWriter writer = new CSVWriter(new FileWriter(filePath, true))) {
             // appending the record
             writer.writeNext(record);
@@ -47,7 +46,7 @@ public class FileService {
     public void writeData(List<String[]> data) {
         try (CSVWriter writer = new CSVWriter(new FileWriter(filePath))) {
             // write the header
-            writer.writeNext(new String[] {"task", "dateCreated", "status", "dateCompleted"});
+            writer.writeNext(new String[] {"id","task", "dateCreated", "status", "dateCompleted"});
 
             // write the data
             writer.writeAll(data);

@@ -11,42 +11,9 @@ import javafx.scene.layout.VBox;
 public class TodoItemController {
 
     @FXML
-    private CheckBox taskCheckBox;
+    private CheckBox todoCheckBox;
     private VBox parentVbox;
     private TodoManager todoManager;
-
-    @FXML
-    public void markTaskAsComplete() {
-
-        boolean confirmed = AlertUtil.confirmAction("Confirm Task Completion",
-                "Are you sure you want to mark this task as complete? This action cannot be undone.");
-
-
-        if (taskCheckBox.isSelected()) {
-            if (confirmed) {
-                parentVbox.getChildren().remove(taskCheckBox.getParent());
-                todoManager.updateTaskStatus(taskCheckBox.getText());
-            } else {
-                taskCheckBox.selectedProperty().setValue(false);
-            }
-        }
-    }
-
-    @FXML
-    public void deleteTask() {
-
-        boolean confirmed = AlertUtil.confirmAction("Confirm Task Deletion",
-                "Are you sure you want to delete this task. This action cannot be undone.");
-
-        if (confirmed) {
-            parentVbox.getChildren().remove(taskCheckBox.getParent());
-            todoManager.deleteTask(taskCheckBox.getText());
-        }
-    }
-
-    public void setTaskText(String text) {
-        taskCheckBox.setText(text);
-    }
 
     public void setParentVbox(VBox parentVbox) {
         this.parentVbox = parentVbox;
@@ -54,6 +21,39 @@ public class TodoItemController {
 
     public void setTodoManager(TodoManager todoManager) {
         this.todoManager = todoManager;
+    }
+
+    public void setCheckBoxText(String todo) {
+        todoCheckBox.setText(todo);
+    }
+
+    @FXML
+    public void markAsComplete() {
+
+        boolean confirmed = AlertUtil.confirmAction("Confirm Task Completion",
+                "Are you sure you want to mark this task as complete? This action cannot be undone.");
+
+
+        if (todoCheckBox.isSelected()) {
+            if (confirmed) {
+                parentVbox.getChildren().remove(todoCheckBox.getParent());
+                todoManager.updateTodoStatus(todoCheckBox.getText());
+            } else {
+                todoCheckBox.selectedProperty().setValue(false);
+            }
+        }
+    }
+
+    @FXML
+    public void removeTodo() {
+
+        boolean confirmed = AlertUtil.confirmAction("Confirm Task Deletion",
+                "Are you sure you want to delete this task. This action cannot be undone.");
+
+        if (confirmed) {
+            parentVbox.getChildren().remove(todoCheckBox.getParent());
+            todoManager.deleteTodo(todoCheckBox.getText());
+        }
     }
 
 }

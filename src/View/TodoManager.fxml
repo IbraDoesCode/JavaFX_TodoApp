@@ -20,7 +20,7 @@
       </Label>
    </HBox>
    <HBox alignment="CENTER" prefHeight="50.0" prefWidth="400.0" spacing="10.0">
-      <TextField fx:id="taskTextField" alignment="CENTER" prefHeight="26.0" prefWidth="325.0" />
+      <TextField fx:id="textField" alignment="CENTER" prefHeight="26.0" prefWidth="325.0" />
       <Button mnemonicParsing="false" onAction="#addTodo" style="-fx-background-color: transparent;">
          <graphic>
             <ImageView fx:id="addButton" fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">

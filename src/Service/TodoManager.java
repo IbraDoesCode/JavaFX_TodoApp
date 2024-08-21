@@ -1,7 +1,9 @@
 package Service;
 
 import Model.Status;
+import Model.Todo;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -10,50 +12,70 @@ import java.util.List;
 public class TodoManager {
 
     private final FileService fileService;
-
-    private final List<String[]> data;
+    private final List<String[]> todoList;
+    private final DateTimeFormatter DATE_FORMAT = DateTimeFormatter.ofPattern("MM-dd-yyyy HH:mm:ss");
 
     public TodoManager(FileService fileService) {
         this.fileService = fileService;
-        this.data = fileService.readCsv();
+        this.todoList = fileService.readCsv();
     }
 
-    public List<String[]> getPendingTasks() {
-        List<String[]> pendingTasks = new ArrayList<>();
-        for (String[] row : data) {
-            if (row[2].equals(String.valueOf(Status.PENDING))) {
-                pendingTasks.add(row);
+    public String generateId() {
+        int todoNum = todoList.isEmpty() ? 1 : Integer.parseInt(todoList.getLast()[0].split("-")[1]) + 1;
+        return LocalDate.now().format(DateTimeFormatter.ofPattern("MM:dd:yy")) + "-" + todoNum;
+    }
+
+    public List<Todo> getPendingTodos() {
+        List<Todo> pendingTodos = new ArrayList<>();
+        for (String[] row : todoList) {
+            if (row[3].equals(String.valueOf(Status.PENDING))) {
+                pendingTodos.add(
+                        new Todo(row[0],
+                                row[1],
+                                LocalDateTime.parse(row[2], DATE_FORMAT),
+                                Status.valueOf(row[3]),
+                                null
+                        ));
             }
         }
-        return pendingTasks;
+        return pendingTodos;
     }
 
-    public void addTask(String[] taskData) {
+    public String[] convertTodoToArray(Todo todo) {
+        return new String[]{
+                todo.getId(),
+                todo.getTodo(),
+                todo.getDateCreated().format(DATE_FORMAT),
+                String.valueOf(todo.getStatus()),
+                String.valueOf(todo.getDateCompleted())
+        };
+    }
+
+    public void addTodo(Todo todo) {
         // add the new task to the in-memory data list
-        data.add(taskData);
+        todoList.add(convertTodoToArray(todo));
 
         // append the new task to the CSV
-        fileService.appendData(taskData);
+        fileService.appendData(convertTodoToArray(todo));
     }
 
-    public void deleteTask(String task) {
-        // remove the task from in-memory data list
-        data.removeIf(row -> row[0].equals(task));
+    public void deleteTodo(String todo) {
+        todoList.removeIf(row -> row[1].equals(todo));
 
         // write the updated data list back to the CSV
-        fileService.writeData(data);
+        fileService.writeData(todoList);
     }
 
-    public void updateTaskStatus(String task) {
-        for (String[] row : data) {
-            if (row[0].equals(task)) {
+    public void updateTodoStatus(String todo) {
+        for (String[] row : todoList) {
+            if (row[1].equals(todo)) {
                 // update status
-                row[2] = String.valueOf(Status.COMPLETE);
+                row[3] = String.valueOf(Status.COMPLETE);
                 // update dateCompleted
-                row[3] = LocalDateTime.now().format(DateTimeFormatter.ofPattern("MM-dd-yyyy HH:mm:ss"));
+                row[4] = LocalDateTime.now().format(DATE_FORMAT);
             }
             // Save the changes in the CSV
-            fileService.writeData(data);
+            fileService.writeData(todoList);
         }
     }
 

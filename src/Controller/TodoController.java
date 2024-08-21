@@ -1,6 +1,7 @@
 package Controller;
 
 import Model.Status;
+import Model.Todo;
 import Service.TodoManager;
 import javafx.collections.ListChangeListener;
 import javafx.fxml.FXML;
@@ -19,8 +20,9 @@ import java.util.List;
 
 public class TodoController {
 
+    public static final DateTimeFormatter DATE_FORMAT = DateTimeFormatter.ofPattern("MM-dd-yyyy HH:mm:ss");
     @FXML
-    public TextField taskTextField;
+    public TextField textField;
     @FXML
     public Label taskCountLabel;
     @FXML
@@ -32,12 +34,12 @@ public class TodoController {
 
     private final TodoManager todoManager = new TodoManager(fileService);
 
-    private final List<String[]> tasks = todoManager.getPendingTasks();
+    private final List<Todo> todoList = todoManager.getPendingTodos();
 
     @FXML
     public void initialize() {
         // Load tasks from CSV when initializing
-        loadTasksFromCsv();
+        loadTodoFromCsv();
 
         updateTaskCount();
     }
@@ -52,16 +54,16 @@ public class TodoController {
 
     @FXML
     public void addTodo() {
-        String task = taskTextField.getText().trim();
-        if (!task.isEmpty()) {
+        String todo = textField.getText().trim();
+        if (!todo.isEmpty()) {
             try {
                 // Load the TodoItem FXML
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/TodoItem.fxml"));
                 Node todoItem = loader.load();
 
-                // Get the controller of the TodoItem and set the task text
+                // Get the controller of the TodoItem and set the todo text
                 TodoItemController controller = loader.getController();
-                controller.setTaskText(task);
+                controller.setCheckBoxText(todo);
 
                 // Set the parent VBox and TodoManager
                 controller.setParentVbox(vbox);
@@ -70,11 +72,11 @@ public class TodoController {
                 // Add the TodoItem to the VBox
                 vbox.getChildren().add(todoItem);
 
-                // Save the task to CSV
-                saveTaskToCsv(task);
+                // Save the todo to CSV
+                saveTodo(todo);
 
                 // Clear the input field
-                taskTextField.clear();
+                textField.clear();
 
             } catch (IOException e) {
                 e.printStackTrace();
@@ -82,15 +84,15 @@ public class TodoController {
         }
     }
 
-    private void loadTasksFromCsv() {
+    private void loadTodoFromCsv() {
 
-        for (String[] task : tasks) {
+        for (Todo todo : todoList) {
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/TodoItem.fxml"));
                 Node todoItem = loader.load();
 
                 TodoItemController controller = loader.getController();
-                controller.setTaskText(task[0]);
+                controller.setCheckBoxText(todo.getTodo());
                 controller.setParentVbox(vbox);
                 controller.setTodoManager(todoManager);
 
@@ -103,10 +105,11 @@ public class TodoController {
         }
     }
 
-    private void saveTaskToCsv(String task) {
-        String dateTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("MM-dd-yyyy HH:mm:ss"));
-        String[] data = {task, dateTime, String.valueOf(Status.PENDING), ""};
-        todoManager.addTask(data);
+    private void saveTodo(String todo) {
+        String id = todoManager.generateId();
+        LocalDateTime dateTime = LocalDateTime.now();
+        Status status = Status.PENDING;
+        todoManager.addTodo(new Todo(id, todo, dateTime, status, null));
     }
 
 }
