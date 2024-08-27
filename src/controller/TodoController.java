@@ -109,6 +109,7 @@ public class TodoController {
         String id = todoManager.generateId();
         LocalDateTime dateTime = LocalDateTime.now();
         Status status = Status.PENDING;
+
         todoManager.addTodo(new Todo(id, todo, dateTime, status, null));
     }
 
