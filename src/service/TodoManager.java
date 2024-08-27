@@ -8,6 +8,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class TodoManager {
 
@@ -26,19 +27,10 @@ public class TodoManager {
     }
 
     public List<Todo> getPendingTodos() {
-        List<Todo> pendingTodos = new ArrayList<>();
-        for (String[] row : todoList) {
-            if (row[3].equals(String.valueOf(Status.PENDING))) {
-                pendingTodos.add(
-                        new Todo(row[0],
-                                row[1],
-                                LocalDateTime.parse(row[2], DATE_FORMAT),
-                                Status.valueOf(row[3]),
-                                null
-                        ));
-            }
-        }
-        return pendingTodos;
+        return todoList.stream()
+                .filter(row -> row[3].equals("PENDING")) // only get row with pending Status
+                .map(row -> new Todo(row[0], row[1], LocalDateTime.parse(row[2], DATE_FORMAT), Status.valueOf(row[3]), null)) // create new Todo Object
+                .toList(); // return as List
     }
 
     public String[] convertTodoToArray(Todo todo) {
@@ -74,9 +66,9 @@ public class TodoManager {
                 // update dateCompleted
                 row[4] = LocalDateTime.now().format(DATE_FORMAT);
             }
-            // Save the changes in the CSV
-            fileService.writeData(todoList);
         }
+        // Save the changes in the CSV
+        fileService.writeData(todoList);
     }
 
 }
