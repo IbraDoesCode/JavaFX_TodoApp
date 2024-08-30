@@ -43,11 +43,11 @@ public class TodoManager {
 
     public String[] convertTodoToArray(Todo todo) {
         return new String[]{
-                todo.getId(),
-                todo.getTodo(),
-                todo.getDateCreated().format(DATE_FORMAT),
-                String.valueOf(todo.getStatus()),
-                String.valueOf(todo.getDateCompleted())
+                todo.id(),
+                todo.todo(),
+                todo.dateCreated().format(DATE_FORMAT),
+                String.valueOf(todo.status()),
+                String.valueOf(todo.dateCompleted())
         };
     }
 

@@ -92,7 +92,7 @@ public class TodoController {
                 Node todoItem = loader.load();
 
                 TodoItemController controller = loader.getController();
-                controller.setCheckBoxText(todo.getTodo());
+                controller.setCheckBoxText(todo.todo());
                 controller.setParentVbox(vbox);
                 controller.setTodoManager(todoManager);
 
