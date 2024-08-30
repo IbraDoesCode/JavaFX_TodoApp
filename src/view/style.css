@@ -1,0 +1,19 @@
+.button {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-opacity: 0.6;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-border-color: lightgray;
+    -fx-border-radius: 10px;
+}
+
+.hbox {
+    -fx-border-color: lightgray;
+    -fx-border-radius: 10px;
+}
